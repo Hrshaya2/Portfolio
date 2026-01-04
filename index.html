@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Harsha Lakshitha - Full Stack Developer specializing in building exceptional digital experiences">
+    <meta name="keywords" content="developer, portfolio, web developer, full stack, frontend, backend">
+    <meta name="author" content="Harsha Lakshitha">
+    
+    <title>Harsha Lakshitha | Full Stack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">HL</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image-wrapper fade-in">
+                        <div class="hero-image">
+                            <img src="assets/images/profile.png" alt="Harsha Lakshitha - Full Stack Developer" id="profile-img">
+                            <div class="image-border"></div>
+                        </div>
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            Available for work
+                        </div>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <p class="hero-greeting fade-in">Hi, my name is</p>
+                        <h1 class="hero-title fade-in">Harsha Lakshitha.</h1>
+                        <h2 class="hero-subtitle fade-in">I build things for the web.</h2>
+                        <p class="hero-description fade-in">
+                            I'm a full stack developer specializing in building exceptional digital experiences. 
+                            Currently, I'm focused on creating accessible, human-centered products that make 
+                            a difference.
+                        </p>
+                        
+                        <div class="hero-cta fade-in">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="assets/images/resume.pdf" class="btn btn-outline" target="_blank">
+                                <span>Download Resume</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-social fade-in">
+                            <a href="https://github.com/Hrshaya2" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/harsha-lakshitha/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://web.facebook.com/harshaya2" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="harshalakshitha001@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <span>Scroll Down</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="title-number">01.</span>
+                    About Me
+                </h2>
+                
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <p>
+                            I’m a Full-Stack Developer based in Sri Lanka with a passion for architecting scalable,
+                             high-performance web applications. My journey into the world of code started with a curiosity about 
+                             how things work on the internet, which led me to graduate from <a href="https://www.esu.lk/" class="inline-link">ESOFT University</a>
+                        </p>
+                        <p> 
+                            Currently, I’m part of the Engineering team at <a href="#" class="inline-link">ZenIT</a> , where I specialize in the MERN Stack. 
+                            Having worked across startups and digital agencies, I’ve developed a "pixel-perfect" mindset-ensuring that every line of code translates into a seamless user experience.
+                            
+                        </p>
+                        <p>
+                            I've had the privilege of working at <a href="#" class="inline-link">a start-up</a>, 
+                            <a href="#" class="inline-link">a huge corporation</a>, and 
+                            <a href="#" class="inline-link">a digital agency</a>. My main focus these days is 
+                            building accessible, inclusive products and digital experiences.
+                        </p>
+                        <p>Here are a few technologies I've been working with recently:</p>
+                        
+                        <ul class="skills-list">
+                            <li><i class="fas fa-caret-right"></i> JavaScript (ES6+)</li>
+                            <li><i class="fas fa-caret-right"></i> TypeScript</li>
+                            <li><i class="fas fa-caret-right"></i> React</li>
+                            <li><i class="fas fa-caret-right"></i> Node.js</li>
+                            <li><i class="fas fa-caret-right"></i> Python</li>
+                            <li><i class="fas fa-caret-right"></i> PostgreSQL</li>
+                            <li><i class="fas fa-caret-right"></i> AWS</li>
+                            <li><i class="fas fa-caret-right"></i> Docker</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-image fade-in">
+                        <div class="image-wrapper">
+                            <img src="assets/images/about.jpg" alt="Harsha Lakshitha working">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills Section -->
+                <div class="skills-section fade-in">
+                    <h3 class="skills-title">My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Frontend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">SASS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-server"></i> Backend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">Laravel</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">GraphQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-database"></i> Database</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tools"></i> Tools & Others</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">CI/CD</span>
+                                <span class="skill-tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="title-number">02.</span>
+                    Where I've Worked
+                </h2>
+                
+                <div class="experience-content fade-in">
+                    <div class="experience-tabs">
+                        <button class="tab-btn active" data-tab="job1">ZenIT</button>
+                        <button class="tab-btn" data-tab="job3">Digital Agency</button>
+                        <button class="tab-btn" data-tab="job4">Freelance</button>
+                        <div class="tab-indicator"></div>
+                    </div>
+                    
+                    <div class="experience-panels">
+                        <div class="experience-panel active" id="job1">
+                            <h3 class="job-title">
+                                Senior Full Stack Developer 
+                                <span class="company">@ <a href="#" target="_blank">ZenIT</a></span>
+                            </h3>
+                            <p class="job-duration">
+                                <i class="far fa-calendar-alt"></i>
+                                January 2023 - Present
+                            </p>
+                            <ul class="job-description">
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Lead development of customer-facing web applications serving 100K+ daily users
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Architected and implemented microservices infrastructure reducing system latency by 40%
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Mentored junior developers and conducted code reviews to maintain code quality
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Collaborated with product and design teams to implement new features and improvements
+                                </li>
+                            </ul>
+                            <div class="job-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>TypeScript</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="experience-panel" id="job3">
+                            <h3 class="job-title">
+                                Frontend Developer 
+                                <span class="company">@ <a href="#" target="_blank">Digital Agency</a></span>
+                            </h3>
+                            <p class="job-duration">
+                                <i class="far fa-calendar-alt"></i>
+                                March 2019 - May 2021
+                            </p>
+                            <ul class="job-description">
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Developed and styled interactive web applications for clients
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Collaborated with a small team of developers to create responsive websites
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Ensured cross-browser compatibility and mobile responsiveness
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Optimized applications for maximum speed and scalability
+                                </li>
+                            </ul>
+                            <div class="job-tech">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>SASS</span>
+                                <span>jQuery</span>
+                                <span>WordPress</span>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-panel" id="job4">
+                            <h3 class="job-title">
+                                Freelance Developer 
+                                <span class="company">@ <a href="#" target="_blank">Self-Employed</a></span>
+                            </h3>
+                            <p class="job-duration">
+                                <i class="far fa-calendar-alt"></i>
+                                January 2018 - February 2019
+                            </p>
+                            <ul class="job-description">
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Designed and developed custom websites for small businesses
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Managed projects from concept to completion independently
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Built e-commerce solutions using WordPress and WooCommerce
+                                </li>
+                                <li>
+                                    <i class="fas fa-caret-right"></i>
+                                    Provided ongoing maintenance and support for client websites
+                                </li>
+                            </ul>
+                            <div class="job-tech">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>WordPress</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resume-link fade-in">
+                    <a href="assets/images/resume.pdf" class="btn btn-outline" target="_blank">
+                        <span>View Full Résumé</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="title-number">03.</span>
+                    Certifications
+                </h2>
+                
+                <div class="certifications-grid">
+                    <div class="cert-card fade-in">
+                        <div class="cert-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Full Stack Web Developer</h3>
+                            <p class="cert-issuer">University of Moratuwa</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued: March 2024</p>
+                            <p class="cert-id"><i class="fas fa-fingerprint"></i> Credential ID: II66T0QJcn</p>
+                            <a href="https://open.uom.lk/lms/mod/customcert/verify_certificate.php" class="cert-verify" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Verify Certificate
+                            </a>
+                        </div>
+                        <div class="cert-badge">
+                            <img src="assets/images/Moratuwa.png" alt="University of Moratuwa Badge">
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card fade-in">
+                        <div class="cert-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Google Cloud Professional</h3>
+                            <p class="cert-issuer">Google Cloud</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued: January 2024</p>
+                            <p class="cert-id"><i class="fas fa-fingerprint"></i> Credential ID: GCP-PRO-789012</p>
+                            <a href="#" class="cert-verify" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Verify Certificate
+                            </a>
+                        </div>
+                        <div class="cert-badge">
+                            <img src="assets/images/Google.png" alt="Google">
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card fade-in">
+                        <div class="cert-icon">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Hackerthen Certification</h3>
+                            <p class="cert-issuer">ESU Colombo</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued: November 2023</p>
+                            <p class="cert-id"><i class="fas fa-fingerprint"></i> Credential ID: ESU-FE-345678</p>
+                            <a href="#" class="cert-verify" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Verify Certificate
+                            </a>
+                        </div>
+                        <div class="cert-badge">
+                            <img src="assets/images/esu.webp" alt="ESU Badge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="title-number">04.</span>
+                    Some Things I've Built
+                </h2>
+                
+                <!-- Featured Projects -->
+                <div class="featured-projects">
+                    
+                    <article class="featured-project fade-in">
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">
+                                <a href="#" target="_blank">Loyal Home Nursing Care – Healthcare Web Solution</a>
+                            </h3>
+                            <div class="project-description">
+                                <p>
+                                    I developed a professional, responsive web platform for a healthcare service provider specializing in home nursing. 
+                                    The goal was to create a compassionate and trustworthy digital presence that allows families to easily explore medical services like wound care, physiotherapy, and medication management. 
+                                    I focused on building a clean UI/UX to ensure accessibility for all age groups and integrated a seamless consultation booking flow
+                                </p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Stripe</li>
+                                <li>Redux</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/Hrshaya2/loyalhomenursingcare" target="_blank" aria-label="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://loyalhomenursingcare.page/" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/project1.png" alt="Loyal Home Nursing Care Screenshot">
+                                <div class="image-overlay"></div>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="featured-project fade-in">
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">
+                                <a href="#" target="_blank">LoadGod – Heavy Vehicle Rental Platform</a>
+                            </h3>
+                            <div class="project-description">
+                                <p>
+                                    LoadGod is a web-based heavy vehicle rental platform designed to address inefficiencies in construction, agriculture, and logistics industries. 
+                                    The system connects renters with vehicle owners, allowing them to book specialized vehicles such as excavators, trucks, tractors, and loaders.
+
+                                </p>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>MongoDB</li>
+                                <li>Express.js</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="http://github.com/Hrshaya2/Loadgod2" target="_blank" aria-label="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <a href="#" target="_blank">
+                                <img src="assets/images/project2.png" alt="LoadGod – Heavy Vehicle Rental Platform Screenshot">
+                                <div class="image-overlay"></div>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Other Projects Grid -->
+                <h3 class="other-projects-title fade-in">Other Noteworthy Projects</h3>
+                
+                <div class="projects-grid">
+                    <article class="project-card fade-in">
+                        <div class="card-header">
+                            <div class="folder-icon">
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#" target="_blank">Weather Dashboard</a>
+                        </h4>
+                        <p class="card-description">
+                            A weather application that displays current conditions and forecasts based on 
+                            user location with beautiful visualizations.
+                        </p>
+                        <ul class="card-tech">
+                            <li>React</li>
+                            <li>Weather API</li>
+                            <li>Chart.js</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="project-card fade-in">
+                        <div class="card-header">
+                            <div class="folder-icon">
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#" target="_blank">Recipe Finder</a>
+                        </h4>
+                        <p class="card-description">
+                            Search and discover recipes based on ingredients you have. Features include 
+                            filtering by cuisine, diet, and cooking time.
+                        </p>
+                        <ul class="card-tech">
+                            <li>Vue.js</li>
+                            <li>Spoonacular API</li>
+                            <li>CSS Grid</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="project-card fade-in">
+                        <div class="card-header">
+                            <div class="folder-icon">
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#" target="_blank">Markdown Editor</a>
+                        </h4>
+                        <p class="card-description">
+                            A live markdown editor with preview, syntax highlighting, and export to 
+                            PDF/HTML functionality.
+                        </p>
+                        <ul class="card-tech">
+                            <li>JavaScript</li>
+                            <li>Marked.js</li>
+                            <li>highlight.js</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="project-card fade-in">
+                        <div class="card-header">
+                            <div class="folder-icon">
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#" target="_blank">Expense Tracker</a>
+                        </h4>
+                        <p class="card-description">
+                            Track your daily expenses with categorization, charts, and monthly reports 
+                            to help manage your finances better.
+                        </p>
+                        <ul class="card-tech">
+                            <li>React</li>
+                            <li>LocalStorage</li>
+                            <li>Recharts</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="project-card fade-in">
+                        <div class="card-header">
+                            <div class="folder-icon">
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#" target="_blank">Quiz Application</a>
+                        </h4>
+                        <p class="card-description">
+                            An interactive quiz app with multiple categories, difficulty levels, 
+                            score tracking, and leaderboard functionality.
+                        </p>
+                        <ul class="card-tech">
+                            <li>TypeScript</li>
+                            <li>Open Trivia API</li>
+                            <li>SCSS</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="project-card fade-in">
+                        <div class="card-header">
+                            <div class="folder-icon">
+                                <i class="far fa-folder-open"></i>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" aria-label="Live Demo" class="live-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#" target="_blank">Portfolio Template</a>
+                        </h4>
+                        <p class="card-description">
+                            A customizable portfolio template with dark/light mode, animations, 
+                            and easy configuration options.
+                        </p>
+                        <ul class="card-tech">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>GSAP</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span class="title-number">06.</span>
+                    Get In Touch
+                </h2>
+                
+                <div class="contact-content">
+                    <div class="contact-text fade-in">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm currently looking for new opportunities and my inbox is always open. 
+                            Whether you have a question, a project idea, or just want to say hi, 
+                            I'll try my best to get back to you!
+                        </p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:hello@johndoe.com">harshalakshitha001@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>No 15/b Cross Road, Mount Lavania</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+94787411299">+94 78 7411299</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form fade-in" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can I help you?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="#home" class="footer-logo">Harsha Lakshitha</a>
+                    <p>Building digital experiences that make a difference.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="https://github.com/Hrshaya2" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/harsha-lakshitha/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://web.facebook.com/harshaya2" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    Designed & Built by <a href="#home">Harsha Lakshitha</a>
+                </p>
+                <p class="copyright">
+                    &copy; <span id="current-year"></span> All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -258,7 +258,7 @@ if (window.innerWidth > 992 && cursorGlow) {
 }
 
 // ===================================
-// Contact Form Handling (PHP Backend)
+// Contact Form Handling (Web3Forms)
 // ===================================
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
@@ -290,16 +290,12 @@ if (contactForm) {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
         
-        // Create FormData object for PHP
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('email', email);
-        formData.append('subject', subject || 'No Subject');
-        formData.append('message', message);
+        // Create FormData object from the form (includes access_key)
+        const formData = new FormData(contactForm);
         
         try {
-            // Send to PHP backend
-            const response = await fetch('send-email.php', {
+            // Send to Web3Forms API
+            const response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 body: formData
             });
@@ -307,7 +303,7 @@ if (contactForm) {
             const result = await response.json();
             
             if (result.success) {
-                showNotification(result.message, 'success');
+                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
                 contactForm.reset();
             } else {
                 showNotification(result.message || 'Failed to send message. Please try again.', 'error');
